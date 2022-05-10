@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Todo app</title>
-</head>
-<body>
-  <main class="card">
-    <div class="header">
-      <h1>TODO</h1>
-      <button class="theme"></button>
-    </div>
-    <div class="new-todo">
-      <input type="text" name="todo" id="new-todo" placeholder="Create a new todo...">
-    </div>
-    <div class="todo-list"></div>
-    <div class="footer">
-      <p><span></span>items left</p>
-      <button class="all">All</button>
-      <button class="active">Active</button>
-      <button class="completed">Completed</button>
-      <button class="clear-completed">Clear Completed</button>
-    </div>
-    <p>Drag and drop to reorder list</p>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-img"></div>
+    <main>
+      <div class="header">
+        <h2>TODO</h2>
+        <div class="theme-btn"></div>
+      </div>
+      <div class="new-todo">
+        <button class="check"></button>
+        <input
+          type="text"
+          class="todo-input"
+          name="todo-input"
+          id="todo-input"
+          placeholder="Create a new todo..."
+        />
+      </div>
+      <div class="todo-list">
+      </div>
+      <p class="dragMsg">Drag and drop to reorder list</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
