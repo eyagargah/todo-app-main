@@ -6,7 +6,34 @@
   box-sizing: border-box;
 }
 
-.top-img {
-  width: 500px;
-  height: 500px;
+body{ 
+  background-color:  hsl(235, 21%, 11%);
+  --theme-btn : url(./images/icon-cross.svg);
+  --top-img : url(./images/bg-desktop-light.jpg);
+  --bg-color:  hsl(235, 21%, 11%);
+  --text-color:hsl(235, 19%, 35%);
+  --checked--todo : hsl(233, 11%, 84%);
+  --title: hsl(0, 0%, 98%);
+}
+
+.theme-btn {
+  background-color: var(--theme-btn);
+}
+
+img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  width: 100%;
+  height: auto;
+}
+
+.light {
+  --theme-btn : url(./images/icon-sun.svg);
+  --top-img : url(./images/bg-desktop-light.jpg);
+  --bg-color:  hsl(236, 33%, 92%);
+  --text-color:hsl(235, 19%, 35%);
+  --checked--todo : hsl(233, 11%, 84%);
+  --title: hsl(0, 0%, 98%);
 }
